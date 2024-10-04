@@ -1,4 +1,4 @@
-/* const express = require('express');
+const express = require('express');
 const config = require('../src/server/config.js');
 const app = config(express());
 const router = require('../src/routes/index.js');
@@ -144,7 +144,7 @@ describe("POST '/signin' Login", ()=> {
     test('Should login successfully with valid credentials', async ()=> {
         const response = await request(app)
         .post('/signin')
-        .send({user: 'Gabo2102', password: '1234'});
+        .send({user: 'Gabo2102', password: '27479490'});
          expect(response.statusCode).toBe(302);
          expect(response.headers['location']).toBe('/main');
     });
@@ -155,23 +155,8 @@ describe("POST '/signin' Login", ()=> {
         .send({user: 'pedro', password: '5555'});
         expect(response.headers['location']).toBe('/');
     });
-
-    test('Should redirect to dashboard main if already logged in', async ()=> {
-        const response = await request(app)
-        .post('/signin')
-        .send({user: 'Gabo2102', password: '1234'});
-        expect(response.headers['location']).toBe('/main');
-    });
 });
-
-describe("GET '/main dashboard", ()=> {
-    test('Should render dashboard main if is Logged in', ()=> {
-
-    });
-});
-
-//describer POST
 
 afterAll(async () => {
     await mongoose.connection.close(true);
-}); */
+});
