@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../public/css/recover.css">
+
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card card-modify-recovery shadow-sm">
+            <div class="content-img-logo text-center">
+                <a href="/"><img src="../public/img/favicon2.png" alt="Logo" class="img-logo"></a>
+            </div>
+            <div class="card-body">
+                <h4 class="text-center mb-4">Envio de correo</h4>
+                <form action="/recoverPass" method="POST">
+                    <div class="mb-4 input-recovery">
+                        <input type="text" name="email" class="form-control"  placeholder="Introduce tu correos" required>
+                    </div>
+                    <button type="submit" class="btn btn-design-recovery mt-2">Enviar Enlace de Recuperación</button>
+                </form>
+                <div class="text-center mt-3">
+                    <a href="/">Volver al inicio de sesión</a>
+                </div>
+            </div>
+        </div>
+    </div>

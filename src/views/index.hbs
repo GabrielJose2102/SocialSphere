@@ -1,0 +1,15 @@
+    <link rel="stylesheet" href="../public/css/signin.css">
+
+    <div class="login-container">
+        <a href="/"><img src="../public/img/favicon2.png" alt="Logo"></a>
+        
+        <form action="/signin" method="POST" class="from-group">
+            <input type="text" name="user" class="form-control" placeholder="Usuario" required>
+            <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
+            <button type="submit" class="btn btn-primary btn-atribute">Iniciar sesión</button>
+        </form>
+        <div class="login-footer">
+            <p>¿No tienes cuenta? <a href="/signup">Regístrate</a></p>
+            <p><a href="/recover">¿Olvidaste tu contraseña?</a></p>
+        </div>
+    </div>

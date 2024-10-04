@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="../public/css/signup.css">
+  
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card card-modify-signup shadow-sm">
+            <div class="content-img-logo text-center">
+                <a href="/"><img src="../public/img/favicon2.png" alt="Logo" class="img-logo"></a>
+            </div>
+            <div class="card-body">
+                <form action="/signup" method="POST" class="form-group">
+                    <div class="row">
+                        <!-- Columna izquierda -->
+                        <div class="col-md-6">
+                            <div class="mb-4 input-signup mb-4">
+                                <input type="text" class="form-control" name="name" placeholder="Introduce tus nombres" required>
+                            </div>
+                            <div class="mb-4 input-signup mb-4">
+                                <input type="email" name="email" class="form-control" placeholder="Introduce tu correo" required>
+                            </div>
+                            <div class="mb-4 input-signup mb-4">
+                                <select name="country" id="country" class="form-select form-control" required>
+                                    
+                                </select>
+                            </div>
+                            
+                            <div class="mb-4 input-signup mb-4">
+                                <input type="password" name="password" class="form-control" placeholder="Introduce tu contraseña" required>
+                            </div>
+                        </div>
+                        <!-- Columna derecha -->
+                        <div class="col-md-6">
+                            <div class="mb-4 input-signup mb-4">
+                                <input type="text" name="last_name" class="form-control" placeholder="Introduce tus apellidos" required>
+                            </div>
+                            <div class="mb-4 input-signup mb-4">
+                                <input type="text" name="user" class="form-control" placeholder="Introduce tu nombre de usuario" required>
+                            </div>
+                            <div class="mb-4 input-signup mb-4">
+                                <div class="input-group">
+                                    <select name="country-code" id="country-code" class="input-group-text select-code">
+                                        
+                                    </select>
+                                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Número de teléfono" required>
+                                </div>
+                            </div>
+                            <div class="mb-4 input-signup mb-4">
+                                <input type="password" name="password2" class="form-control" placeholder="Confirme su contraseña" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="terms" class="form-check-input" id="check-register" required>
+                        <label for="check-register" class="form-check-label">
+                            ¿De acuerdo con los <a target="_blank" href="../public/Terminos.pdf">Términos y Condiciones</a>?
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-design-signup mt-2">Registrar Usuario</button>
+                </form>
+            </div>
+        </div>
+    </div>

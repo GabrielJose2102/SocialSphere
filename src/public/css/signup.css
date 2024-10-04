@@ -1,0 +1,153 @@
+/* Fondo y diseño general */
+body {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixid=M3w0NzUyOXwwfDF8c2VhcmNofDR8fGJhY2tncm91bmR8ZW58MHx8fHwxNjkzNTI3ODg2fDA&ixlib=rb-1.2.1&w=1000&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Estilos de la tarjeta de registro */
+.card-modify-signup {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    background: rgba(52, 58, 64, 0.8); /* Fondo oscuro transparente */
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del logo */
+.content-img-logo {
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.img-logo {
+    width: 12rem;
+}
+
+/* Colores de los enlaces */
+a {
+    color: #1E5631;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de los botones con los colores proporcionados */
+.btn-design-signup {
+    background-color: #1E5631;
+    border-color: #1E5631;
+    width: 100%;
+    padding: 0.85rem 1.5rem;
+    font-weight: 700;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-design-signup:hover {
+    background-color: #163B24;
+    border-color: #163B24;
+    transform: translateY(-2px); /* Efecto de elevación al hacer hover */
+}
+
+.btn-design-signup:focus {
+    box-shadow: 0 0 0 0.25rem rgba(30, 86, 49, 0.25); /* Sombra verde alrededor en focus */
+}
+
+.btn-design-signup:active {
+    background-color: #0D2418;
+    border-color: #1E5631;
+}
+
+.btn-design-signup:disabled {
+    background-color: #1E5631;
+    border-color: #1E5631;
+    color: #fff;
+}
+
+/* Estilos de los inputs */
+.form-control {
+    border-radius: 50px;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    background-color: #343a40;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Color del placeholder */
+.form-control::placeholder {
+    color: #b3b3b3; /* Gris claro */
+    opacity: 1; /* Asegura que el color del placeholder sea totalmente visible */
+}
+
+.form-control:focus {
+    border-color: #28A745;
+    box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+    outline: none;
+}
+
+/* Estilos de la selección */
+.form-select {
+    border-radius: 50px;
+    padding: 0.75rem;
+    background-color: #343a40;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-select::placeholder {
+    color: #b3b3b3; /* Gris claro */
+}
+
+.select-code {
+    height: 3.1rem;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .card-modify-signup {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-modify-signup {
+        max-width: 600px;
+    }
+
+    .img-logo {
+        width: 10rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-modify-signup {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    .img-logo {
+        width: 8rem;
+    }
+
+    .form-control, .form-select, .btn-design-signup {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+}
